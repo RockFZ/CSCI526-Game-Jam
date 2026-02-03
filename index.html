@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Flip - CSCI526 Game Jam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gravity Flip</h1>
+        <p class="subtitle">Genre: Platformer + Twist: Gravity Manipulation</p>
+        
+        <div class="game-info">
+            <div class="controls">
+                <strong>Controls:</strong><br>
+                Arrow Keys / WASD - Move<br>
+                SPACE - Flip Gravity<br>
+                R - Restart
+            </div>
+            <div class="score-display">
+                <div>Score: <span id="score">0</span></div>
+                <div>Level: <span id="level">1</span></div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="game-status">
+            <p id="status-message">Collect all stars to advance!</p>
+        </div>
+        
+        <div class="instructions">
+            <h2>About the Game</h2>
+            <p><strong>Mechanic:</strong> Navigate through platforms by flipping gravity to reach the ceiling or floor. 
+            This twist on traditional platformers requires players to think spatially and time their gravity flips carefully.</p>
+            <p><strong>Objective:</strong> Collect all the stars in each level to progress. Avoid falling off the screen!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
